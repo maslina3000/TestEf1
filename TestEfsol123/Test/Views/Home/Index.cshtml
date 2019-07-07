@@ -1,9 +1,9 @@
-﻿
+﻿@model Test.Models.AnswerForm
 @using (Html.BeginForm("Index", "Home", FormMethod.Get))
 {
     <div class="jumbotron">
 
-        <form name="test" method="post" action="input1.php">
+        <form name="Index" method="post" action="~/Views/Home/VarTest.cshtml">
             <p>
                 <b>Ваше имя:</b><br>
                 <input type="text" name="Name" size="40" id="name">
@@ -41,6 +41,6 @@
             </p>
         </form>
 
-        <p><a href="https://asp.net" class="btn btn-primary btn-lg">хз зачем мне эта кнопка, но она кросивая</a></p>
+        <p><a href="~/Views/Home/VarTest.cshtml" class="btn btn-primary btn-lg">хз зачем мне эта кнопка, но она кросивая</a></p>
     </div>
 }

@@ -2,12 +2,22 @@
 @{
     ViewBag.Title = "VarTest";
 }
+{
+<div class="jumbotron">
 
-<h2>VarTest</h2>
-<p>@Model.ID</p>
-<p>@Model.Name</p>
-<p>@Model.Age</p>
-<p>@Model.Birth</p>
-<p>@Model.Marital</p>
-<p>@Model.Programming</p>
+    <form name="VarTest" method="post" action="~/Views/Home/VarTest.cshtml">
+        <h2>VarTest</h2>
+        <p>@Model.ID</p>
+        <p>@Model.Name</p>
+        <p>@Model.Age</p>
+        <p>@Model.Birth</p>
+        <p>@Model.Marital</p>
+        <p>@Model.Programming</p>
+    </form>
+
+    <p><a href="~/Views/Home/VarTest.cshtml" class="btn btn-primary btn-lg">хз зачем мне эта кнопка, но она кросивая</a></p>
+</div>
+}
+
+
 
