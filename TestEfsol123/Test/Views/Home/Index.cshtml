@@ -1,47 +1,48 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+@using (Html.BeginForm("Index", "Home", FormMethod.Get))
+{
+    <div class="jumbotron">
 
-<div class="jumbotron">
+        <form name="test" method="post" action="input1.php">
+            <p>
+                <b>Ваше имя:</b><br>
+                <input type="text" name="Name" size="40" id="name">
+            </p>
+            <p>
+                <b>Ваш возраст:</b><br>
+                <input type="number" name="Age" size="40" id="age">
+            </p>
+            <p>
+                <b>Ваш пол:</b><Br>
+                <input type="radio" name="Gender" value="male" id="gender"> Мужской<Br>
+                <input type="radio" name="Gender" value="female" id="gender"> Женский<Br>
+            </p>
+            <p>
+                <b>Введите дату рождения:</b><br>
+                <input type="date" name="Birth" size="40" id="birth">
+            </p>
+            <p>
+                <b>Введите семейное положение:</b><Br>
+                <input type="radio" name="Marital" value="single" id="marital"> Не замужем/не женат<Br>
+                <input type="radio" name="Marital" value="maried" id="marital"> Замужем/женат<Br>
+            </p>
+            <p>
+                <b>Любите ли вы программировать?</b><Br>
+                <input type="radio" name="Programming" value="Yes" id="programming"> Да<Br>
+                <input type="radio" name="Programming" value="Yes" id="programming"> Да<Br>
+            </p>
+            <p>
+                *мои креативные вопросы*<Br>
+                <!-- <textarea name="comment" cols="40" rows="3"></textarea>-->
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </p>
+        </form>
 
-    <form name="test" method="post" action="input1.php">
-        <p>
-            <b>Ваше имя:</b><br>
-            <input type="text" name="Name" size="40" id="name">
-        </p>
-        <p>
-            <b>Ваш возраст:</b><br>
-            <input type="number" name="Age" size="40" id="age">
-        </p>
-        <p>
-            <b>Ваш пол:</b><Br>
-            <input type="radio" name="Gender" value="male" id="gender"> Мужской<Br>
-            <input type="radio" name="Gender" value="female" id="gender"> Женский<Br>
-        </p>
-        <p>
-            <b>Введите дату рождения:</b><br>
-            <input type="date" name="Birth" size="40" id="birth">
-        </p>
-        <p>
-            <b>Введите семейное положение:</b><Br>
-            <input type="radio" name="Marital" value="single" id="marital"> Не замужем/не женат<Br>
-            <input type="radio" name="Marital" value="maried" id="marital"> Замужем/женат<Br>
-        </p>
-        <p>
-            <b>Любите ли вы программировать?</b><Br>
-            <input type="radio" name="Programming" value="Yes" id="programming"> Да<Br>
-            <input type="radio" name="Programming" value="Yes" id="programming"> Да<Br>
-        </p>
-        <p>
-            *мои креативные вопросы*<Br>
-            <!-- <textarea name="comment" cols="40" rows="3"></textarea>-->
-        </p>
-        <p
-            <input type="submit" value="Отправить">
-            <input type="reset" value="Очистить">
-        </p>
-    </form>
-
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">хз зачем мне эта кнопка, но она кросивая</a></p>
-</div>
-
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">хз зачем мне эта кнопка, но она кросивая</a></p>
+    </div>
+}
